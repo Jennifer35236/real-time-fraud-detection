@@ -193,6 +193,25 @@ streamlit run dashboard/app.py
 
 The recovered `scripts/start_all.sh` documents the original macOS startup sequence using Docker/Kafka, followed by the consumer, producer and Streamlit dashboard.
 
+## Project Architecture
+
+The system uses Apache Kafka to simulate a real-time transaction stream, with machine learning used to score incoming transactions for fraud and ADWIN used to monitor changes in the data stream.
+
+### System Architecture
+
+![Real-Time Fraud Detection System Architecture](screenshots/01-system-architecture.png)
+
+### Adaptive Random Forest and Concept Drift
+
+The original MSc research design incorporated Adaptive Random Forest with ADWIN-based concept drift detection and a feedback loop for adapting to changing fraud patterns.
+
+![Adaptive Random Forest Feedback Loop](screenshots/02-detailed-arf-feedback-loop.png)
+
+## Dashboard
+
+A Streamlit dashboard was developed to monitor fraud detection performance and transaction activity in real time.
+
+![Real-Time Fraud Detection Dashboard](screenshots/03-streamlit-fraud-dashboard.png)
 ## Dataset
 
 The implementation uses the credit-card fraud dataset with:
