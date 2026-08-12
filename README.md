@@ -199,19 +199,19 @@ The system uses Apache Kafka to simulate a real-time transaction stream, with ma
 
 ### System Architecture
 
-![Real-Time Fraud Detection System Architecture](01-system-architecture.png)
+![Real-Time Fraud Detection System Architecture](./01-system-architecture.png)
 
 ### Adaptive Random Forest and Concept Drift
 
 The original MSc research design incorporated Adaptive Random Forest with ADWIN-based concept drift detection and a feedback loop for adapting to changing fraud patterns.
 
-![Adaptive Random Forest Feedback Loop](02-detailed-arf-feedback-loop.png)
+![Adaptive Random Forest Feedback Loop](./02-detailed-arf-feedback-loop.png)
 
 ## Dashboard
 
 A Streamlit dashboard was developed to monitor fraud detection performance and transaction activity in real time.
 
-![Real-Time Fraud Detection Dashboard](03-streamlit-fraud-dashboard.png)
+![Real-Time Fraud Detection Dashboard](./03-streamlit-fraud-dashboard.png)
 ## Dataset
 
 The implementation uses the credit-card fraud dataset with:
